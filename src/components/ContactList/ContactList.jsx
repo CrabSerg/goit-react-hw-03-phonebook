@@ -1,12 +1,12 @@
 import PropTypes, { object } from 'prop-types';
-import { Contact } from '../ContactItem/ContactItem';
+import { ContactItems } from '../ContactItem/ContactItem';
 
 export const ContactList = ({ contacts, onDelete }) => {
   return (
     <ul>
       {contacts.map(({ name, number, id }) => {
         return (
-          <Contact
+          <ContactItems
             key={id}
             name={name}
             number={number}
@@ -24,8 +24,3 @@ ContactList.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-Contact.propTypes = {
-  name: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-};

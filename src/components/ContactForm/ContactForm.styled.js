@@ -28,11 +28,11 @@ export const AddBtn = styled.button`
   margin: 0 auto;
   border: none;
   font-size: 18px;
-  background-color: #98fb98;
+  background-color: #fac657;
   transition: background-color 300ms linear;
 
   &:hover,
   &:focus {
-    background-color: #90ee90;
+    background-color: #acff26;
   }
 `;

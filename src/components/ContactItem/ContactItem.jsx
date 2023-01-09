@@ -3,7 +3,7 @@ import { ContactItem } from './ContactItem.styled';
 import { Box } from 'components/Box';
 import { ContactName, ContactNumber, DeleteBtn } from './ContactItem.styled';
 
-export const Contact = ({ name, number, id, onDelete }) => {
+export const ContactItems = ({ name, number, id, onDelete }) => {
   return (
     <ContactItem>
       <Box>
@@ -17,7 +17,7 @@ export const Contact = ({ name, number, id, onDelete }) => {
   );
 };
 
-Contact.propTypes = {
+ContactItems.propTypes = {
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
